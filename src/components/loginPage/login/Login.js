@@ -1,5 +1,5 @@
 import React from 'react'
-import FormikLoginForm from './FormikLoginForm'
+import FormikLoginForm from '../loginForm/FormikLoginForm'
 
 class Login extends React.Component {
   render() {
