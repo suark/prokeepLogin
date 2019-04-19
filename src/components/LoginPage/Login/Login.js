@@ -5,7 +5,7 @@ class Login extends React.Component {
   render() {
     return (
       <div>
-        <h1>Login Form</h1>
+        <h1>ProKeep</h1>
         <FormikLoginForm />
       </div>
     )
