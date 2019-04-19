@@ -1,5 +1,5 @@
 const validateEmail = (email) => {
-  if (email == null) {
+  if (email == null || email === '') {
     return {
       valid: false,
       error: 'Required',
@@ -19,7 +19,7 @@ const validateEmail = (email) => {
 }
 
 const validatePassword = (password) => {
-  if (password == null) {
+  if (password == null || password === '') {
     return {
       valid: false,
       error: 'Required',
@@ -27,7 +27,7 @@ const validatePassword = (password) => {
   } else if (typeof password === 'string' && password.length < 1) {
     return {
       valid: false,
-      error: 'Password too short.',
+      error: 'Password too short',
     }
   } else {
     return {

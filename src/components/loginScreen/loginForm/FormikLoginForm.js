@@ -5,11 +5,9 @@ import handleSubmitLogin from '../utils/submit'
 
 const FormikLoginForm = withFormik({
   mapPropsToValues: () => ({ email: '', password: ''}),
-
   validate: handleValidation,
   handleSubmit: handleSubmitLogin,
-
-  displayName: 'Prokeep Form',
+  displayName: 'Prokeep Project Login',
 })(LoginForm)
 
 export default FormikLoginForm

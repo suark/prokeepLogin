@@ -11,7 +11,7 @@ const handleSubmitLogin = async ({ email, password }, { setSubmitting }) => {
         password,
       }
     )
-    if (response.status && response.status === 200 ) {
+    if (response.status != null && response.status === 200 ) {
       alert('Logged in successfully!')
     } else {
       alert('Login Failed')

@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ProKeep from './ProKeep.svg';
+import './LoginForm.css'
 
 class LoginForm extends React.Component {
   render() {
@@ -14,25 +16,28 @@ class LoginForm extends React.Component {
     } = this.props
 
     return (            
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='Form'>
+      <div className='ProKeep-logo'>
+        <img src={ProKeep} alt='ProKeep Logo' />
+      </div>
       <input
-        type="email"
-        name="email"
+        type='email'
+        name='email'
         onChange={handleChange}
         onBlur={handleBlur}
         value={values.email}
       />
       {errors.email && touched.email && errors.email}
       <input
-        type="password"
-        name="password"
+        type='password'
+        name='password'
         onChange={handleChange}
         onBlur={handleBlur}
         value={values.password}
       />
       {errors.password && touched.password && errors.password}
-      <button type="submit" disabled={isSubmitting}>
-        Submit
+      <button type='submit' disabled={isSubmitting}>
+        Log In
       </button>
     </form>)
   }
