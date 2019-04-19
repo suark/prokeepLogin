@@ -1,31 +1,15 @@
 import { withFormik } from 'formik'
 import LoginForm from './LoginForm'
+import handleValidation from './utils/validation'
+import handleSubmitLogin from './utils/submit'
 
 const FormikLoginForm = withFormik({
   mapPropsToValues: () => ({ email: '', password: ''}),
 
-  // Custom sync validation
-  validate: values => {
-    console.log(values)
-    const errors = {}
-    if (!values.email) {
-      errors.email = 'Required';
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-    ) {
-      errors.email = 'Invalid email address';
-    }
-    return errors
-  },
+  validate: handleValidation,
+  handleSubmit: handleSubmitLogin,
 
-  handleSubmit: (values, { setSubmitting }) => {
-    setTimeout(() => {
-      alert(JSON.stringify(values, null, 2))
-      setSubmitting(false)
-    }, 1000)
-  },
-
-  displayName: 'BasicForm',
+  displayName: 'Prokeep Form',
 })(LoginForm)
 
 export default FormikLoginForm

@@ -6,9 +6,9 @@ Bonus points if the form looks sharp.
 
 [x]  The login form should have an email input and a password input.
 [x] The login form should validate that the email is a valid email input
-[] And the password field has at least one character before you process the submit action.
+[x] And the password field has at least one character before you process the submit action.
 [x] on submit validation
-[] extra points for realtime validation
+[x] extra points for realtime validation
 [] Build a unit test for the form
   [] valid login
   [] invalid login
