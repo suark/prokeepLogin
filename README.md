@@ -1,3 +1,9 @@
+## quick start
+```
+npm i
+npm start
+```
+
 ## Login Page Project for ProKeep
 
 A sample login page that validates inputs.
