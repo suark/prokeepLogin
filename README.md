@@ -1,3 +1,9 @@
+## quick start
+```
+npm i
+npm start
+```
+
 ## Login Page Project for ProKeep
 
 A sample login page that validates inputs.
@@ -16,7 +22,7 @@ There is a basic test to make sure the app renders.
 And the main tests:
 
 - A valid login
-- An different combinations of invalid logins
+- And different combinations of invalid logins
 
 
 Scripts:
