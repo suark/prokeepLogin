@@ -13,10 +13,10 @@ It contains a custom built logo recolor, and favicon.
 
 There is a basic test to make sure the app renders. 
 
-And there are two other tests.
+And the main tests:
 
 - A valid login
-- An invalid login
+- An different combinations of invalid logins
 
 
 Scripts:
