@@ -2,6 +2,11 @@ import axios from 'axios'
 
 const LOGIN_URL = 'https://reqres.in/api/login'
 
+/**
+ * Attempts to log the user into the site
+ * @param {object} values Must contain an email and password  
+ * @param {object} formikbag Passed by formik, contains utils and props of the original component. 
+ */
 const handleSubmitLogin = async ({ email, password }, { props, setSubmitting }, ) => {
   try {
     const response = await axios.post(
@@ -12,13 +17,13 @@ const handleSubmitLogin = async ({ email, password }, { props, setSubmitting }, 
       }
     )
     if (response.status != null && response.status === 200 ) {
-      if (props && props.onSuccess) {
+      if (props != null && props.onSuccess) {
         props.onSuccess()
       }
       return true
     }
   } catch (error) {
-    if (props && props.onFailure) {
+    if (props != null && props.onFailure) {
       props.onFailure()
     }
     return false

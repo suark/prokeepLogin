@@ -1,3 +1,7 @@
+/**
+ * Validates an email address
+ * @param {string} email Email address 
+ */
 const validateEmail = (email) => {
   if (email == null || email === '') {
     return {
@@ -18,6 +22,10 @@ const validateEmail = (email) => {
   }
 }
 
+/**
+ * Validates a password
+ * @param {string} password Password
+ */
 const validatePassword = (password) => {
   if (password == null || (typeof password === 'string' && password.length < 1)) {
     return {
@@ -31,6 +39,10 @@ const validatePassword = (password) => {
   }
 }
 
+/**
+ * 
+ * @param {object} values An object containing the form's values
+ */
 const handleValidation = ({ email, password }) => {
   const errors = {}
   const emailValidationResult = validateEmail(email)

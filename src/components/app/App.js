@@ -3,6 +3,7 @@ import './App.css'
 
 import Login from '../loginScreen/login/Login'
 
+//Main container for the application
 class App extends Component {
   render() {
     return (

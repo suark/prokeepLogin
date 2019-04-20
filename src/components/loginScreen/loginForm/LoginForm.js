@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import ProKeep from './ProKeep.svg'
 import './LoginForm.css'
 
+// The main login form containing a logo, email field, password field, and a submit button
 class LoginForm extends React.Component {
   render() {
     const {
