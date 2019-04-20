@@ -1,12 +1,10 @@
 .App-header {
-  background: rgb(2,91,169);
-  background: radial-gradient(circle, rgba(2,91,169,1) 0%, rgba(2,91,169,1) 50%, rgba(0,51,96,1) 100%);
+  background: #025ba9;
+  background: radial-gradient(circle, #025ba9 0%, #025ba9 50%, #003360 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 

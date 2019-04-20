@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ProKeep from './ProKeep.svg';
+import ProKeep from './ProKeep.svg'
 import './LoginForm.css'
 
 class LoginForm extends React.Component {
