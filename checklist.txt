@@ -7,10 +7,10 @@ Requirements:
 [x] on submit validation
 [x] extra points for realtime validation
 [x] login form sends a login REST post request to this stubbed REST service: https://reqres.in
-[] Build a unit test for the form
+[x] Build a unit test for the form
   [x] valid login
   [x] invalid login
 [x] Make form look nice
 [x] Include a "dev" or "run" script in your package.json scripts
 [x] Include a "test" script in your package.json scripts
-[] Upload to a code sharing service such as GitHub, Gitlab, etc. and let us know where to find it.
+[x] Upload to a code sharing service such as GitHub, Gitlab, etc.
